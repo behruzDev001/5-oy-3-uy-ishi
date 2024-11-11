@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Xush Kelibsiz!</h1>
+
+    <div>
+        <input type="text" id="inputName" placeholder="Enter Name">
+        <button onclick="submitData()">Submit</button>
+    </div>
+
+    <div style="margin-top: 20px;">
+        <input type="text" id="inputNewName" placeholder="Name">
+        <input type="number" id="inputNewAge" placeholder="Age">
+        <button onclick="addNewRow()">Add</button>
+    </div>
+
+    <div id="tableWrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="bodyTable">
+                <tr>
+                    <td>1</td>
+                    <td>Sardor</td>
+                    <td>14</td>
+                    <td>
+                        <button class="btn action-delete" onclick="removeRow(this)">Delete</button>
+                        <button class="btn action-edit" onclick="modifyRow(this)">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Anvar</td>
+                    <td>18</td>
+                    <td>
+                        <button class="btn action-delete" onclick="removeRow(this)">Delete</button>
+                        <button class="btn action-edit" onclick="modifyRow(this)">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Shoxruz</td>
+                    <td>20</td>
+                    <td>
+                        <button class="btn action-delete" onclick="removeRow(this)">Delete</button>
+                        <button class="btn action-edit" onclick="modifyRow(this)">Edit</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+<div class="box">
+    <p>Savolingizni yozing</p>
+    <input type="text" id="queryInput" placeholder="Savolingizni yozing">
+    <button id="actionButton">Javob olish</button>
+    <div id="output"></div> 
+</div>
+
+<script src="./main.js"></script>
+</body>
+</html>
